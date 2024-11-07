@@ -163,6 +163,7 @@ button{
     height: 49px;
     background-color: var(--lite--orange);
     border-radius: 6px;
+    cursor: pointer;
 
     font-family:var(--Oxanium--);
     font-size: 20px;
