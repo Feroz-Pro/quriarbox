@@ -1,0 +1,1260 @@
+/* font Family */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ================================ */
+
+:root{
+    --Oxanium--: "Oxanium", sans-serif;
+    --Raleway--: "Raleway", sans-serif;
+
+    /* theme color */
+    --background--color: #FEFCFA;
+    --orange--color:#f95c19;
+    
+    --soft--orange:#FFAF0F;
+    --lite--orange:#FFEDC9;
+    --footer--color--Nblue: #222132;
+    --footer-color-two: #2F2E41;
+    --font--color--cardbox: #464558;
+
+
+
+    /* text coilor */
+   
+    --Text--color--gray:#817382;
+    --text--color--blue:#261134;
+    --text--color--soft--gray:#7B7A8B;
+    --text--color--white: #FFFFFF;
+    --text--color--blackblue: #11111D;
+    --text--color--cardbox: #464558;
+
+}
+
+
+/* =============== common css =================*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+ul,li,a,div,span,picture,nav,ol{
+    list-style: none;
+    margin: 0;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+button{
+    border: none;
+}
+
+
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* ===================================== Nav bar Css========================== */
+
+/* nave menu work here */
+
+
+.navbar_flex{
+   display: flex;
+   align-items: center;
+   background-color: transparent;
+
+
+    margin-top: 15px;
+}
+.logo_section{ 
+    width: 145px;
+    height: 36px;
+    background-position: center;
+    align-items: center;
+    margin-top: -15px;
+
+}
+
+
+    
+
+
+.Navbar__menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;    
+    align-items: center;
+    margin-left: 532px;
+   
+}
+
+
+.Nav__menu__item{
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--Text--color--gray) ;
+    transition: linear 0.2s;
+}
+
+
+.Nav__menu__item:hover {
+    color: var(--orange--color);
+}
+
+
+
+/* search bar icon */
+
+.searchbarand_contact{
+    display: flex;
+    flex-direction: row;
+    column-gap: 9px;
+
+    margin-left: 45px;
+}
+/* side surch bar */
+
+.search_bar{
+    width:49px ;
+    height: 49px;
+    background-color: var(--lite--orange);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: var(--soft--orange);
+    font-size: 22px;
+
+    transition: linear 0.2s;
+}
+.search_bar:hover{
+    background-color: var(--orange--color);
+    color: var(--lite--orange);
+}
+
+
+/* ================================================ */
+
+
+/* contact button */
+
+.contactus__btn{
+    width: 142px;
+    height: 49px;
+    background-color: var(--lite--orange);
+    border-radius: 6px;
+
+    font-family:var(--Oxanium--);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--orange--color);
+
+    transition: linear 0.2s;
+
+}
+
+.contactus__btn:hover{
+    background-color: var(--orange--color);
+    color: var(--lite--orange);
+}
+
+
+/* ===================================================== */
+
+
+/* headlin Background */
+
+.Header__bg{
+    width: auto;
+    height: 95px;
+    background-color: var(--background--color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -80px;
+
+}
+
+/* ========================================= */
+
+
+/* ************** Hero section ***************** */
+
+#Hero{
+    background-color: var(--background--color);
+    margin-top:7px;
+}
+
+.heropart{
+    
+    background-color: var(--background--color);
+}
+
+
+.Hero__flex{
+   display: flex;
+   
+    
+    
+}
+
+
+
+/* =================Hero left part ==================== */
+
+.Hero__left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 41px;
+    margin-top: 260px;
+
+    width: 467px;
+
+}
+
+.Hero__headlines{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.Hero__headlines__title{
+
+    font-family: var(--Raleway--);
+    font-size: 49px;
+    font-weight: 400;
+
+
+}
+.Her__title__bold{
+
+    font-weight:800 ;
+
+}
+
+.Hero__headlines__Pg{
+    font-family: var(--Raleway--);
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.Hero__btn{
+    width: 178px;
+    height: 49px;
+    background-color: var(--orange--color);
+    color: var(--text--color--white);
+}
+
+/* =================Hero right part ==================== */
+
+
+.Hero__right{
+margin-top: 170px;
+
+  
+    align-items: center;
+    width: 830px;
+    height:700px ;
+}
+
+
+/* ************** Hero section end ***************** */
+
+
+
+
+
+/* ************** services section start ***************** */
+
+#Services{
+    background-color: var(--background--color);
+    
+}
+
+
+/* top part */
+
+.Services__top{
+    background-color: var(--background--color);
+display: flex;
+flex-direction: column;
+align-items: center;
+row-gap: 11px;
+
+}
+
+.services__title{
+    font-family: var(--Oxanium--);
+    font-size: 31.25px;
+    font-weight: 31.25px;
+    color: var(--orange--color);
+
+
+}
+.services__title2 {
+
+    font-family: var(--Raleway--);
+    font-size:39.08px;
+    font-weight: 800;
+    color: var(--text--color--blackblue);
+}
+
+
+/* ========================================================== */
+/* bottom part */
+
+.services_bottom{
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    
+}
+
+.svc__list{
+    width: 424px;
+    height: 583px;
+    background-color: var(--text--color--white);
+    border-radius: 16px;
+    border: var(--orange--color) 0.5px solid;
+    
+
+}
+.svc__list:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+
+.list__icon__title{
+    padding-top: 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 29px;
+}
+.List__icon{
+    width: 69px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: var(--soft--orange);
+    
+    font-size: 49px;
+    color: var(--orange--color);
+    position: relative;
+
+
+}
+
+.List__icon i
+{
+
+    position: absolute;
+    top: 34px;
+    left: 8px;
+}
+
+
+.List__headline{
+    font-family: var(--Raleway--);
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--text--color--cardbox);
+
+
+}
+
+
+/*************************************/
+
+
+
+.svc__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    
+    margin-top: 86px;
+}
+
+/* paragraph */
+
+.List__p__style{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.List__p{
+    font-family: var(--Raleway--);
+    color: var(--text--color--soft--gray);
+    font-weight: 400;
+    line-height: 145%;
+
+    width: 301px;
+}
+
+ /* list */
+
+.List__stylel{
+    list-style-type: disc ;
+    color: var(--orange--color);
+    padding-left: 0;
+    font-size: 30px;
+    
+
+}
+
+.li__text__color{
+    color: var(--text--color--soft--gray);
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+
+.List--modify{
+    padding-left: 85px;
+}
+
+ /*=====================================*/ 
+ /* button */
+
+.Lernmore_button{
+    width: 301.81px;
+    height: 49px;
+    background-color: transparent;
+    border: var(--orange--color) 3px solid;
+    border-radius: 5px;
+    color: var(--orange--color);
+    font-family: var(--Oxanium--);
+    font-weight: 700;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 61px;
+
+    transition: linear 0.2s;
+ }
+
+
+.Lernmore_button:hover{
+    background-color: var(--orange--color);
+    color: var(--text--color--white);
+
+}
+
+
+
+
+
+
+/* ************** services section end* **************** */
+
+#services_review{
+    padding-top:100px;
+    background-color: var(--background--color);
+}
+
+.service__review__option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.minicard_box{
+    width: 125px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+    
+}
+
+
+.iconpicture {
+    font-size: 67px;
+}
+
+.countcard{
+    font-family: var(--Raleway--);
+    font-size: 39px;
+    font-weight: 800;
+    color: var(--orange--color);
+}
+
+.itemname{
+    font-family: var(--Raleway--);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--font--color--cardbox);
+    text-align: center;
+}
+
+/* ==============================  FASTEST_DELIVERY  ======================== */
+
+
+.FASTEST_DELIVERY{
+    
+    margin-top: 162px;
+    width: 1320px;
+    height: 580px;
+    position: relative;
+    border-radius: 16px;
+    
+
+    
+}
+
+.FD__fontandbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    position: absolute;
+    top: 164px;
+    left: 226px  ;
+}
+
+.play_video{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: var(--orange--color);
+    font-size: 60px;
+    color: var(--text--color--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: linear 0.3s;
+}
+.play_video:hover{
+    background-color: var(--lite--orange);
+    color: var(--orange--color);
+    font-size:50px;
+    box-shadow: rgb(249, 92, 25) 0px 5px 15px;
+}
+
+.FD__title{
+    font-family: var(--Oxanium--);
+    font-size: 31.25px;
+    font-weight: 700;
+    color: var(--orange--color);
+}
+.FD__pg{
+    font-family: var(--Raleway--);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text--color--white);
+    text-align: center;
+
+
+    width: 873px;
+    height: 98px;
+}
+
+.shead{ 
+    width: 1320px;
+    height: 580px;
+    background-color: #0A090D ;
+    opacity: 80%;
+    border-radius: 16px;
+    position: absolute; 
+    
+}
+
+
+/* ============ Testimonial section start ============ */
+
+
+.Testimonial__OAC {
+   margin-top: 149px;
+   margin-bottom: 100px;
+   width: 872px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 233px;
+}
+
+/* -------------------------------------- */
+
+.Testimonial__OAC__top{
+    display: flex;
+    flex-direction: row;
+    column-gap: 38px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------- */
+
+.Testimonial__OAC_quotation_mark{
+    font-size: 130px;
+    color: var(--lite--orange);
+}
+
+.Testimonial__OAC__tophead{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.Testimonial__OAC__title2{
+    font-family: var(--Oxanium--);
+    color: var(--orange--color);
+    font-size: 31.25px;
+    font-weight: 700;
+}
+
+.Testimonial__OAC__title1{
+    font-family: var(--Raleway--);
+    color: var(--text--color--blackblue);
+    font-size: 39px;
+    font-weight: 800;
+}
+/*---------------------------------------*/
+
+
+
+
+.Testimonial__OAC__bottom{
+
+    padding-left: 35px;
+    padding-top: 39px;
+
+    
+    width: 872px;
+    height: 304px;
+    background-color: var(--text--color--white);
+    border: var(--orange--color) 1px solid;
+    border-radius: 16px ;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: linear 0.2s;
+}
+
+.Testimonial__OAC__bottom:hover{
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+
+}
+
+.TOB_review{
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px ;
+    align-items: start;
+}
+
+.TOB_review_head{
+    font-family: var(--Raleway--);
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--orange--color);
+
+}
+
+.TOB_review_pg{
+    font-family:var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+
+    width: 799.39px;
+    height: 120.47px;
+}
+
+
+
+
+.TOB_star_reviewer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:803px ;
+    align-items: center;
+}
+
+
+.TOB_icons{
+    color: #FFAF0F;
+    font-size: 21px;
+}
+
+.TOB_reviewer_id{
+    display: flex;
+    flex-direction:row;
+    column-gap: 13px;
+    
+}
+
+.TOB_pictur{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #e87a0d;
+}
+
+.TOB_pictur__iduser{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:cover;
+
+}
+
+.TOB_idinfo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.TOB_idinfo__name{
+
+    font-family: var(--Raleway--);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text--color--blue);
+}
+
+.TOB_reviewer_description{
+
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text--color--cardbox);
+}
+
+/* ============ Requestcall section start ============ */
+
+.Requestcall_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+   
+}
+
+
+/* ============ inside css ============ */
+
+.Requestcall_left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+
+/* ---------------------------------------- */
+.Requestcall_picandtitle{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 13.39px ;
+
+    width: 424px;
+  
+}
+
+.Requestcall_left_RQAC{
+    font-family: var(--background--color);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--orange--color);
+}
+
+
+.Requestcall__titleandparagraph{
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+
+}
+
+.Requestcall_left_RQTT{
+
+    font-family: var(--Oxanium--);
+    font-size: 39px;
+    font-weight: 800;
+    color: var(--footer--color--Nblue);
+
+}
+
+.Requestcall_left_PG{
+    font-family: var(--Raleway--);
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--Text--color--gray);
+}
+
+/*--------------------------------------------*/
+
+
+.Requestcall_right{
+    width: 424px;
+    
+    border-radius: 8px;
+
+    color: var(--font--color--cardbox);
+    
+
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+.RQC__snd{
+    
+    width: 424px;
+    margin-bottom: 16px;
+    border-color: var(--orange--color);
+    margin-top: 41px;
+
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 19px;
+
+}
+
+.RQC__message{
+    width:  424px;
+    height: 154px;
+
+}
+
+.RQC__message{
+
+    width: 424px;
+    margin-bottom: 16px;
+    border-color: var(--orange--color);
+    margin-top: 41px;
+
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 19px;
+
+}
+
+.RQC__SM{
+
+width: 424px ;
+height: 49px;
+border-radius: 5px;
+background-color: var(--orange--color);
+color: var(--text--color--white);
+
+font-family: var(--Oxanium--) ;
+font-size: 20px;
+font-weight: 700;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+transition: linear 0.2s;
+
+}
+.RQC__SM:hover{
+    color: var(--orange--color) ;
+    background-color: var(--text--color--white);
+    border: var(--orange--color) 1px solid;
+
+}
+
+
+
+/* ============ FInd Us section start ============ */
+
+.Findus_bottom{
+    display: flex;
+    flex-direction: row;
+    column-gap: 23px;
+    margin-top: 85px;
+    margin-bottom: 30px ;
+}
+
+.Fn__contact{
+    justify-content: center;
+    padding-left:88px ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 51px;
+}
+
+.Findus_top{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 169px;
+}
+
+.FT__title2{
+
+    font-family: var(--Oxanium--);
+    font-size: 31.25px;
+    font-weight: 700;
+    color: var(--orange--color);
+    
+}
+.FT__title{
+    font-family: var(--Raleway--);
+    font-size: 39px;
+    font-weight:800;
+    color: var(--footer--color--Nblue);
+}
+
+
+/* --------------------------------------------- */
+
+.Fb__map{
+    width: 761px;
+    height: 428px;
+    border-radius: 16px;
+}
+/* ----------------------------------------------*/
+
+.Fn__contact{
+    width: 536px;
+    height: 428px;
+    background-color: var(--text--color--white);
+    border-radius: 16px;
+    border: var(--orange--color) 1px solid;
+
+}
+
+
+
+.Fn__contact__headline{
+
+    font-family: var(--Raleway--);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--font--color--cardbox);
+}
+
+.Fn__contact__info{
+    width: 325px;
+    height: 125px;
+
+    color: var(--footer-color-two);
+    font-family: var(--Raleway--);
+    font-weight: 400;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+
+
+.Fnicon--mod{
+    color: var(--orange--color);
+    font-size: 22px;
+}
+
+.Fn__socialmedia_icon{
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+
+.FN_icon_modify{
+    
+
+    color: var(--lite--orange);
+    font-size: 30px;
+    transition: linear 0.2s;
+
+}
+.FN_icon_modify:hover{
+
+    color: var(--orange--color);
+
+
+}
+
+.FN__button{
+    margin-left: 397px;
+    color: var(--text--color--white);
+    background-color: var(--orange--color);
+    width:560px;
+    height: 71px;
+
+    font-family: var(--Oxanium--);
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--orange--color) 1px solid;
+    border-radius: 6px;
+
+    transition: linear 0.2s;
+
+
+}
+
+.FN__button:hover{
+
+    color: var(--orange--color);
+    background-color: var(--text--color--white);
+}
+
+/* ============ FInd Us section end ============ */
+
+
+
+
+/* ============ get an update section start============ */
+
+#Getanupdate{
+    margin-top: 183px;
+    width: 100%;
+    height: 274px;
+    background-color: var(--footer--color--Nblue);
+    padding-top: 84px;
+    padding-bottom: 104px;
+    
+}
+
+
+
+
+.GAU__part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.GAU__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.GAU__info__P{
+    width: 501px;
+    height: 49px;
+    
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text--color--soft--gray);
+    }
+
+    .GAU__info__h3{
+        font-family: var(--Raleway--);
+        font-size: 39px;
+        font-weight: 800;
+        text-align: start;
+        color: var(--text--color--white);
+    
+    }
+    
+
+/* ------------------------------------------------------------- */
+
+
+
+.GAU__sbctonews{
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px ;
+}
+
+.GAU__email__title{
+
+    font-family: var(--Oxanium--);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--orange--color);
+
+}
+
+.GAU__EMAIL__NEws{
+    display: flex;
+    flex-direction: row;
+    column-gap:16px ;
+}
+
+
+
+.GAU__email_holder{
+   padding-left: 18px;
+
+    
+width: 386px;
+height: 49px;
+border-radius: 5px;
+border: var(--text--color--soft--gray) 1px solid;
+background-color: transparent;
+
+color: #7B7A8B;
+text-align: start;
+font-family: var(--Raleway--);
+font-size: 16px;
+font-weight: 400;
+
+
+}
+
+.GAU__news_sbc{
+    width:134px ;
+    height: 49px;
+    background-color: var(--orange--color);
+    color: var(--text--color--white);
+    border-radius: 5px;
+
+}
+
+.GAU__news_sbc:hover{
+    background-color: var(--text--color--white);
+    color: var(--orange--color);
+    border: var(--orange--color) 1px solid;
+}
+
+/* =================== get an Update section end =================== */
+
+#web_footer{
+    width: 100%;
+    height: 235px;
+    background-color: var(--footer-color-two);
+    padding-top:50px ;
+    
+    align-items: center;
+
+}
+
+
+
+.footer_flex{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Footer__lefft{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    justify-content: center;
+
+}
+
+
+.Footer__right{
+    display: flex;
+    flex-direction: row;
+    column-gap: 148px;
+    margin-left: 126px;
+
+    
+
+}
+
+
+
+
+
+.Footer__summary{
+    font-family: var(--Raleway--);
+    color: var(--Text--color--gray);
+    font-size: 16px;
+    font-weight: 600;
+    width: 190px;
+}
+
+/*-------------------------------------------------------------*/
+
+.Footer__nav{
+    display: flex;
+    flex-direction: column;
+    row-gap:22px ;
+}
+.Footer__Nav__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px ;
+}
+
+.Footer__Nav__Top{
+
+font-family: var(--Oxanium--);
+color: var(--text--color--soft--gray);
+font-size: 20px;
+font-weight: 700;
+
+}
+
+.Footer__nav_items{
+
+    font-family: var(--Raleway--);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text--color--soft--gray);
+}
+.Footer__nav_items:hover{
+
+    color: var(--orange--color);
+}
+
+/* =================== Footer section end =================== */
